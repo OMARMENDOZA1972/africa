@@ -1,0 +1,316 @@
+@media screen and (max-width: 768px){}
+
+body{
+  background-color: rgb(252, 234, 194);
+}
+header{
+    background-image: url(IMG/AFRICA5.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    margin: 0.5px;
+    border: 2px solid rgb(119, 82, 12);
+    padding-top: 5px;
+}
+.titulos{
+    color: rgb(252, 215, 146);
+    font-size: 150px;
+    font-family: "Merriweather", serif;
+    font-optical-sizing: auto;
+    -webkit-text-stroke: 3px rgb(204, 146, 38);
+    margin: 1px 700px 1px 100px;
+    border-bottom: 3px solid rgb(204, 146, 38);
+    border-top: 3px solid rgb(204, 146, 38);
+    border-style: double;
+    border-left: none;
+    border-right: none;
+}
+.botones{
+  background-color: rgb(252, 215, 146);
+  border-color: rgb(204, 146, 38);
+  padding: 8px;
+  border-radius: 25px;
+  margin-top: 315px;
+  margin-left: 50px;
+  margin-bottom: 50px;
+}
+.botones a{
+  text-decoration: none;
+  font-family: "Merriweather", serif;
+  font-size: 20px;
+  color: rgb(119, 82, 12);
+}
+main{
+    background-image: url(IMG/AFRICA14.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    margin: 0.5px;
+    border: 2px solid rgb(119, 82, 12);
+    padding-top: 5px;
+}
+main p{
+  font-family: "Merriweather", serif;
+  font-size: 15px;
+  color: white;
+  margin: 5px 100px 15px 400px;
+}
+.boton-principal{
+  background-color: rgb(252, 215, 146);
+  border-color: rgb(204, 146, 38);
+  padding: 8px;
+  border-radius: 25px;
+  margin-left: 50px;
+  margin-bottom: 10px;
+}
+.boton-principal a{
+  text-decoration: none;
+  font-family: "Merriweather", serif;
+  font-size: 20px;
+  color: rgb(119, 82, 12);
+}
+section.multimedia{
+  background-image: url(IMG/AFRICA9.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  margin: 0.5px;
+  border: 2px solid rgb(119, 82, 12);
+  padding-top: 5px;
+}
+section.aborigenes{
+  background-image: url(IMG/GENTE12.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  margin: 0.5px;
+  border: 2px solid rgb(119, 82, 12);
+  padding-top: 5px;
+}
+.slider{
+  width: 100%;
+  height: 330px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.slider img{
+  height: 100%;
+  width: 10%;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid white;
+  transition: all ease-in-out 1s;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.slider img:hover{
+  width: 15%;
+}
+section.fauna{
+  background-image: url(IMG/ELEFANTE3.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  margin: 0.5px;
+  border: 2px solid rgb(119, 82, 12);
+  padding-top: 5px;
+}
+section.vegetacion{
+  background-image: url(IMG/AFRICA17.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  margin: 0.5px;
+  border: 2px solid rgb(119, 82, 12);
+  padding-top: 5px;
+}
+section.contacto{
+  background-image: url(IMG/LANDSCAPE6.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  margin: 0.5px;
+  border: 2px solid rgb(119, 82, 12);
+  padding-top: 5px;
+}
+.formulario{
+  font-family:"Merriweather", serif;
+  color: white;
+  background-color: transparent;
+  display: flex;
+  margin: 20px 650px 20px 650px;
+  padding: 15px;
+  box-shadow:
+   -15px -15px 30px 0px #fff9,
+   -4px -4px 5px 0px #fff9,
+   9px 9px 20px 0px #0002,
+   4px 4px 5px 0px #0001,
+    inset 0px 0px 0px 0px #fff9,
+    inset 0px 0px 0px 0px #0001,
+    inset 0px 0px 0px 0px #fff9,       
+    inset 0px 0px 0px 0px #0001;
+  transition:box-shadow 0.6s cubic-bezier(.79,.21,.06,.81);
+  border: white;  
+  border-radius: 10px;
+  margin-left: 150px;
+}
+.formulario #submit{
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 5px;
+  width: 250px;
+  margin-left: 120px;
+  box-shadow:
+   -15px -15px 30px 0px #fff9,
+   -4px -4px 5px 0px #fff9,
+   9px 9px 20px 0px #0002,
+   4px 4px 5px 0px #0001,
+    inset 0px 0px 0px 0px #fff9,
+    inset 0px 0px 0px 0px #0001,
+    inset 0px 0px 0px 0px #fff9,       
+    inset 0px 0px 0px 0px #0001;
+  transition:box-shadow 0.6s cubic-bezier(.79,.21,.06,.81);
+}
+.frame{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 120px;
+  width: 450px;
+  position: relative;
+   box-shadow:
+   -7px -7px 20px 0px #fff9,
+   -4px -4px 5px 0px #fff9,
+   7px 7px 20px 0px #0002,
+   4px 4px 5px 0px #0001,
+    inset 0px 0px 0px 0px #fff9,
+    inset 0px 0px 0px 0px #0001,
+    inset 0px 0px 0px 0px #fff9,       
+    inset 0px 0px 0px 0px #0001;
+ transition:box-shadow 0.6s cubic-bezier(.79,.21,.06,.81);
+   border-radius: 10px;
+   margin-left: 150px;
+}
+
+.btn{
+  height: 50px;
+  width: 50px;
+  border-radius: 3px;
+  background: #e0e5ec;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+  box-shadow:
+   -7px -7px 20px 0px #fff9,
+   -4px -4px 5px 0px #fff9,
+   7px 7px 20px 0px #0002,
+   4px 4px 5px 0px #0001,
+   inset 0px 0px 0px 0px #fff9,
+   inset 0px 0px 0px 0px #0001,
+   inset 0px 0px 0px 0px #fff9,        inset 0px 0px 0px 0px #0001;
+ transition:box-shadow 0.6s cubic-bezier(.79,.21,.06,.81);
+  font-size: 16px;
+  color: rgba(42, 52, 84, 1);
+  text-decoration: none;
+}
+.btn:active{
+  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.5),
+    inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+}
+.formulario button{
+  font-family: "Merriweather", serif;
+  font-size: medium;
+  background-color: rgb(218, 185, 80);
+  border: 1px solid rgb(119, 82, 12);
+  border-radius: 20px;
+}
+.icon img{
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  margin-left: 200px;
+}
+.videos{
+  background-image: url(IMG/LANDSCAPE7.jpg);
+  opacity: 0.99;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  margin: 0.5px;
+  border: 2px solid rgb(119, 82, 12);
+  padding-top: 5px;
+}
+.titulos-v{
+  color: rgb(252, 215, 146);
+  font-size: 100px;
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  -webkit-text-stroke: 3px rgb(204, 146, 38);
+  margin: 1px 850px 1px 100px;
+  border-bottom: 3px solid rgb(204, 146, 38);
+  border-top: 3px solid rgb(204, 146, 38);
+  border-style: double;
+  border-left: none;
+  border-right: none;
+}
+.fullscreen-container {
+  display: flex;
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  border: 2px solid rgb(175, 102, 7);
+  background-color: rgb(240, 180, 52);
+}
+.fullscreen-video {
+position: relative;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+margin: 13px;
+}
+@media (min-aspect-ratio: 16/9) {
+  .fullscreen-video {
+    width: 18%;
+    height: auto;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  .fullscreen-video {
+    width: auto;
+    height: 20%;
+  }
+}
+.boton-principal-v{
+  background-color: rgb(252, 215, 146);
+  border-color: rgb(204, 146, 38);
+  padding: 8px;
+  border-radius: 25px;
+  margin-left: 50px;
+  margin-bottom: 5px;
+}
+.boton-principal-v a{
+  text-decoration: none;
+  font-family: "Merriweather", serif;
+  font-size: 20px;
+  color: rgb(119, 82, 12);
+}
+footer{
+  text-align: center;
+}
+
