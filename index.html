@@ -1,155 +1,209 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AFRICA</title>
-    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style></style>
 </head>
 <body>
     <header id="principal">
-        <h1 class="titulos">AFRICA</h1> 
-        <div class="">
+        <h1 class="titulos">AFRICA</h1>
+        <div class="flex flex-wrap justify-center mt-4">
             <nav>
-                <button class="botones"><a href="#reseña"> RESEÑA</a></button>
+                <button class="botones"><a href="#reseña">RESEÑA</a></button>
                 <button class="botones"><a href="#multimedia">MULTIMEDIA</a></button>
                 <button class="botones"><a href="#contacto">CONTACTO</a></button>
             </nav>
+        </div>
     </header>
-    <br>
-    <main>
-        <div>
+
+    <main class="py-8">
+        <div class="container mx-auto px-4">
             <h1 class="titulos" id="reseña">RESEÑA</h1>
             <br><br>
-            <p>África es el tercer continente más grande del mundo, después de Asia y América. Limita al norte con el Mar Mediterráneo, al este con el Océano Índico y el Mar Rojo, al sur con los océanos Índico y Atlántico, y al oeste con el Océano Atlántico. 
-            </p>
-            <p> Extensión: <br>
+            <p>África es el tercer continente más grande del mundo, después de Asia y América. Limita al norte con el Mar Mediterráneo, al este con el Océano Índico y el Mar Rojo, al sur con los océanos Índico y Atlántico, y al oeste con el Océano Atlántico.</p>
+            <p>
+                Extensión: <br>
                 El continente africano tiene una superficie total de 30 272 922 km², lo que representa el 22% de la superficie terrestre total. <br>
                 Población: <br>
                 Con una población de alrededor de 1 400 millones de habitantes, África es el segundo continente más poblado del mundo, después de Asia. <br>
                 Geografía: <br>
                 África es un continente diverso en términos de paisajes, que incluyen desiertos, montañas, selvas, sabanas, y costas variadas. <br>
                 Clima: <br>
-                El clima africano es muy variado, desde el desierto árido del Sahara hasta el clima tropical y húmedo de la selva ecuatorial. </p>
-            <button class="boton-principal"><a href="#principal">PRINCIPAL</a></button>    
+                El clima africano es muy variado, desde el desierto árido del Sahara hasta el clima tropical y húmedo de la selva ecuatorial.
+            </p>
+            <button class="boton-principal"><a href="#principal">PRINCIPAL</a></button>
         </div>
     </main>
-    <br>
-    <section class="multimedia">
-        <h1 class="titulos" id="multimedia">MULTIMEDIA</h1>
-        <nav>
-            <button class="botones"><a href="#aborigenes"> ABORIGENES </a></button>
-            <button class="botones"><a href="#fauna"> FAUNA</a></button>
-            <button class="botones"><a href="#vegetacion"> VEGETACION </a></button>
-            <button class="botones"><a href="#videos">VIDEOS</a></button>
+
+    <section class="multimedia py-8">
+        <div class="container mx-auto px-4">
+            <h1 class="titulos" id="multimedia">MULTIMEDIA</h1>
+            <div class="flex flex-wrap justify-center mt-4">
+                <nav>
+                    <button class="botones"><a href="#aborigenes">ABORIGENES</a></button>
+                    <button class="botones"><a href="#fauna">FAUNA</a></button>
+                    <button class="botones"><a href="#vegetacion">VEGETACION</a></button>
+                    <button class="botones"><a href="#videos">VIDEOS</a></button>
+                    <button class="boton-principal"><a href="#principal">PRINCIPAL</a></button>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <section class="aborigenes py-8">
+        <div class="container mx-auto px-4">
+            <h1 class="titulos" id="aborigenes">ABORIGENES</h1>
+            <div class="slider">
+                <img src="IMG/GENTE1.jpg" alt="[Image of Persona aborigen 1]">
+                <img src="IMG/GENTE2.jpg" alt="[Image of Persona aborigen 2]">
+                <img src="IMG/GENTE7.jpg" alt="[Image of Persona aborigen 3]">
+                <img src="IMG/GENTE4.jpg" alt="[Image of Persona aborigen 4]">
+                <img src="IMG/GENTE5.jpg" alt="[Image of Persona aborigen 5]">
+            </div>
+            <button class="boton-principal"><a href="#multimedia">MULTIMEDIA</a></button>
             <button class="boton-principal"><a href="#principal">PRINCIPAL</a></button>
-        </nav>
-    </section>
-    <br>
-    <section class="aborigenes">
-        <h1 class="titulos" id="aborigenes">ABORIGENES</h1>
-        <div class="slider">
-            <img src="IMG/GENTE1.jpg" alt="">
-            <img src="IMG/GENTE2.jpg" alt="">
-            <img src="IMG/GENTE7.jpg" alt="">
-            <img src="IMG/GENTE4.jpg" alt="">
-            <img src="IMG/GENTE5.jpg" alt="">
         </div>
-        <br><br>
-        <button class="boton-principal"><a href="#multimedia">MULTIMEDIA</a></button>
-        <button class="boton-principal"><a href="#principal">PRINCIPAL</a></button>
     </section>
-    <br><br>
-    <section class="fauna">
-        <h1 class="titulos" id="fauna">FAUNA</h1>
-        <div class="slider">
-            <img src="IMG/ELEFANTE5.jpg" alt="">
-            <img src="IMG/JIRAFA1.jpg" alt="">
-            <img src="IMG/LEON1.jpg" alt="">
-            <img src="IMG/CEBRA3.jpg" alt="">
-            <img src="IMG/ANTILOPE2.jpg" alt="">
+
+    <section class="fauna py-8">
+        <div class="container mx-auto px-4">
+            <h1 class="titulos" id="fauna">FAUNA</h1>
+            <div class="slider">
+                <img src="IMG/ELEFANTE5.jpg" alt="[Image of Elefante]">
+                <img src="IMG/JIRAFA1.jpg" alt="[Image of Jirafa]">
+                <img src="IMG/LEON1.jpg" alt="[Image of León]">
+                <img src="IMG/CEBRA3.jpg" alt="[Image of Cebra]">
+                <img src="IMG/ANTILOPE2.jpg" alt="[Image of Antílope]">
+            </div>
+            <button class="boton-principal"><a href="#multimedia">MULTIMEDIA</a></button>
+            <button class="boton-principal"><a href="#principal">PRINCIPAL</a></button>
         </div>
-        <br><br>
-        <button class="boton-principal"><a href="#multimedia">MULTIMEDIA</a></button>
-        <button class="boton-principal"><a href="#principal">PRINCIPAL</a></button>
     </section>
-    <br><br>
-    <section class="vegetacion">
-        <h1 class="titulos" id="vegetacion">VEGETACION</h1>
-        <div class="slider">
-            <img src="IMG/ARBOL1.jpg" alt="">
-            <img src="IMG/ARBOL2.jpg" alt="">
-            <img src="IMG/ARBOL3.jpg" alt="">
-            <img src="IMG/ARBOL4.jpg" alt="">
-            <img src="IMG/ARBOL5.jpg" alt="">
+
+    <section class="vegetacion py-8">
+        <div class="container mx-auto px-4">
+            <h1 class="titulos" id="vegetacion">VEGETACION</h1>
+            <div class="slider">
+                <img src="IMG/ARBOL1.jpg" alt="[Image of Árbol africano 1]">
+                <img src="IMG/ARBOL2.jpg" alt="[Image of Árbol africano 2]">
+                <img src="IMG/ARBOL3.jpg" alt="[Image of Árbol africano 3]">
+                <img src="IMG/ARBOL4.jpg" alt="[Image of Árbol africano 4]">
+                <img src="IMG/ARBOL5.jpg" alt="[Image of Árbol africano 5]">
+            </div>
+            <button class="boton-principal"><a href="#multimedia">MULTIMEDIA</a></button>
+            <button class="boton-principal"><a href="#principal">PRINCIPAL</a></button>
         </div>
-        <br><br>
-        <button class="boton-principal"><a href="#multimedia">MULTIMEDIA</a></button>
-        <button class="boton-principal"><a href="#principal">PRINCIPAL</a></button>
-    </section>    
-        <br><br>
-    <section class="videos">
-        <h1 class="titulos-v" id="videos">VIDEOS</h1>
-        <div class="fullscreen-container">
-            <video loop muted autoplay poster="" class="fullscreen-video">
-                <source src="VIDS/video1.mp4" type="video/mp4">
-            </video>
-            <video loop muted autoplay poster="" class="fullscreen-video">
-                <source src="VIDS/video2.mp4" type="video/mp4">
-            </video>
-            <video loop muted autoplay poster="" class="fullscreen-video">
-                <source src="VIDS/video6.mp4" type="video/mp4">
-            </video>
-            <video loop muted autoplay poster="" class="fullscreen-video">
-                <source src="VIDS/video4.mp4" type="video/mp4">
-            </video>
-            <video loop muted autoplay poster="" class="fullscreen-video">
-                <source src="VIDS/video5.mp4" type="video/mp4">
-            </video>
-        </div> 
-        <br>
-        <button class="boton-principal"><a href="#multimedia">MULTIMEDIA</a></button>
-        <button class="boton-principal-v"><a href="index.html">PRINCIPAL</a></button>
     </section>
-    <br><br>
-    <section class="contacto">
-        <h1 class="titulos" id="contacto">CONTACTO</h1>
-        <br>
-        <div class="formulario">
-            <form>
-                <label for="Nombre">Nombre</label>
-                <input type="text" id="Nombre" name="Nombre">
-                <label for="Apellido">Apellido</label>
-                <input type="text" id="Apellido" name="Apellido"><br><br>
-                <label for="Email">Email</label>
-                <input type="email" name="Email" id="Email">
-                <label for="Telefono">Telefono</label>
-                <input type="number" name="Telefono" id="telefono"><br><br>
-                <label for="Mensaje">Mensaje</label>
-                <textarea name="Mensaje" id="Mensaje" rows="4" cols="50"></textarea><br><br>
-                <button id="submit" type="Submit">Enviar</button>
-            </form>
+
+    <section class="videos py-8">
+        <div class="container mx-auto px-4">
+            <h1 class="titulos" id="videos">VIDEOS</h1>
+            <div class="fullscreen-container">
+                <video loop muted autoplay poster="" class="fullscreen-video">
+                    <source src="VIDS/video1.mp4" type="video/mp4">
+                </video>
+                <video loop muted autoplay poster="" class="fullscreen-video">
+                    <source src="VIDS/video2.mp4" type="video/mp4">
+                </video>
+                <video loop muted autoplay poster="" class="fullscreen-video">
+                    <source src="VIDS/video6.mp4" type="video/mp4">
+                </video>
+                <video loop muted autoplay poster="" class="fullscreen-video">
+                    <source src="VIDS/video4.mp4" type="video/mp4">
+                </video>
+                <video loop muted autoplay poster="" class="fullscreen-video">
+                    <source src="VIDS/video5.mp4" type="video/mp4">
+                </video>
+            </div>
+            <button class="boton-principal"><a href="#multimedia">MULTIMEDIA</a></button>
+            <button class="boton-principal-v"><a href="index.html">PRINCIPAL</a></button>
         </div>
-        <div class ="frame">
-            <a href="#" class="btn"><i class="fab fa-facebook-f" style="color: #3b5998;"></i></a>
-            <a href="#" class="btn"><i class="fab fa-twitter" style="color: #00acee;"></i></a>
-            <a href="#" class="btn"><i class="fab fa-instagram" style="color: #e44428;"></i></a>
-            <a href="#" class="btn"><i class="fab fa-linkedin-in" style="color:#0e76a8;"></i></a>
-            <a href="#" class="btn"><i class="fab fa-pinterest" style="color:#e00d29;"></i></a>
-            <a href="#" class="btn"><i class="far fa-envelope"></i></a>
-        </div>
-        <br>
-        <button class="boton-principal"><a href="#principal">PRINCIPAL</a></button>
     </section>
+
+    <section class="contacto py-8">
+        <div class="container mx-auto px-4">
+            <h1 class="titulos" id="contacto">CONTACTO</h1>
+            <div class="formulario">
+                <form>
+                    <label for="Nombre">Nombre</label>
+                    <input type="text" id="Nombre" name="Nombre" placeholder="Tu nombre">
+                    <label for="Apellido">Apellido</label>
+                    <input type="text" id="Apellido" name="Apellido" placeholder="Tu apellido">
+                    <label for="Email">Email</label>
+                    <input type="email" name="Email" id="Email" placeholder="tu@email.com">
+                    <label for="Telefono">Telefono</label>
+                    <input type="number" name="Telefono" id="telefono" placeholder="Tu teléfono">
+                    <label for="Mensaje">Mensaje</label>
+                    <textarea name="Mensaje" id="Mensaje" rows="4" placeholder="Escribe tu mensaje aquí..."></textarea>
+                    <button id="submit" type="Submit">Enviar</button>
+                </form>
+            </div>
+            <div class="frame">
+                <a href="#" class="btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="btn" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="btn" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+                <a href="#" class="btn" aria-label="Email"><i class="far fa-envelope"></i></a>
+            </div>
+            <button class="boton-principal"><a href="#principal">PRINCIPAL</a></button>
+        </div>
+    </section>
+
     <footer>
-        <div class="footer">
+        <div class="container mx-auto px-4">
             <p>Creado por OMAR ABUD &copy; 2025</p>
+        </div>
     </footer>
 
+    <div id="social-float">
+        <a href="#" aria-label="Visita nuestro Instagram">
+            <i class="fab fa-instagram fa-3x"></i>
+        </a>
+        <a href="#" aria-label="Visita nuestro Facebook">
+            <i class="fab fa-facebook fa-3x"></i>
+        </a>
+        <a href="#" aria-label="Visita nuestro YouTube">
+            <i class="fab fa-youtube fa-3x"></i>
+        </a>
+    </div>
 
+    <div id="whatsapp-float">
+        <a href="https://wa.me/XXXXXXXXXXX" target="_blank" aria-label="Contáctanos por WhatsApp">
+            <i class="fab fa-whatsapp fa-3x"></i>
+        </a>
+    </div>
+
+    <div id="lightboxOverlay" class="lightbox-overlay">
+        <img id="lightboxImage" class="lightbox-image" src="" alt="[Image of Imagen ampliada]">
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Lógica para el lightbox (visor de imágenes)
+            const sliderImages = document.querySelectorAll('.slider img');
+            const lightboxOverlay = document.getElementById('lightboxOverlay');
+            const lightboxImage = document.getElementById('lightboxImage');
+
+            sliderImages.forEach(image => {
+                image.addEventListener('click', () => {
+                    lightboxImage.src = image.src;
+                    lightboxOverlay.classList.add('active');
+                });
+            });
+
+            lightboxOverlay.addEventListener('click', () => {
+                lightboxOverlay.classList.remove('active');
+            });
+        });
+    </script>
 </body>
 </html>
