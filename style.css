@@ -116,7 +116,7 @@
             background-color: rgb(252, 215, 146);
             border-color: rgb(204, 146, 38);
             padding: 8px 15px;
-            border-radius: 25px;
+            border-radius: 25px; 
             margin: 10px auto; /* Centrar y añadir margen vertical */
             display: block; /* Para que ocupe su propia línea y se pueda centrar */
             width: fit-content; /* Ajustar ancho al contenido */
@@ -273,8 +273,8 @@
         .formulario button[type="Submit"] {
             background-color: rgb(218, 185, 80);
             border: 1px solid rgb(119, 82, 12);
-            color: rgb(119, 82, 12);
-            padding: 10px 20px;
+            color: rgb(235, 225, 207);
+            padding: 6px 20px;
             width: 100%; /* Ocupar todo el ancho */
             margin-left: 0; /* Eliminar margen fijo */
             border-radius: 20px;
@@ -293,9 +293,9 @@
             flex-wrap: wrap; /* Permitir que los iconos salten de línea */
             justify-content: center; /* Centrar los iconos */
             align-items: center;
-            padding: 20px;
+            padding: 2px;
             max-width: 600px; /* Limitar el ancho del contenedor de iconos */
-            margin: 20px auto; /* Centrar y añadir margen */
+            margin: 10px auto; /* Centrar y añadir margen */
             box-shadow:
                 -7px -7px 20px 0px #fff9,
                 -4px -4px 5px 0px #fff9,
