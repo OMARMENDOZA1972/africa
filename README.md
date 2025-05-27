@@ -1,2 +1,2 @@
 # africa
-pagina dedicada a Africa
+pagina dedicada a Africa 
