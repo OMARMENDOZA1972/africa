@@ -1,434 +1,481 @@
-/* Estilos base  */
-        body {
-            font-family: "Merriweather", serif;
-            background-color: rgb(252, 234, 194);
-        }
+/* Estilos base */
+body {
+    font-family: "Merriweather", serif;
+    background-color: rgb(252, 234, 194);
+    margin: 0; /* Asegurar que no haya margen por defecto en el body */
+    padding: 0; /* Asegurar que no haya padding por defecto en el body */
+}
 
-        /* Estilos del Header */
-        header {
-            background-image: url(IMG/AFRICA5.jpg); /* Mantener tu imagen de fondo */
-            background-repeat: no-repeat;
-            background-attachment: fixed; /* Mantener fijo el fondo */
-            background-size: cover; /* Ajustar la imagen para cubrir el área */
-            background-position: center; /* Centrar la imagen de fondo */
-            margin: 0.5px; /* Restaurado un pequeño margen para que no se pegue al borde */
-            border: 2px solid rgb(119, 82, 12);
-            padding: 20px; /* Añadir padding para espacio */
-            box-sizing: border-box; /* Incluir padding y borde en el ancho total */
-            /* La altura de 1000px se aplicará solo en pantallas grandes (ver media query) */
-        }
+/* Estilos del Header */
+header {
+    background-image: url(IMG/AFRICA5.jpg); /* Mantener tu imagen de fondo */
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Mantener fijo el fondo */
+    background-size: cover; /* Ajustar la imagen para cubrir el área */
+    background-position: center; /* Centrar la imagen de fondo */
+    margin: 0.5px;
+    border: 2px solid rgb(119, 82, 12);
+    padding: 20px; /* Añadir padding para espacio */
+    box-sizing: border-box; /* Incluir padding y borde en el ancho total */
+    min-height: 300px; /* Altura mínima para que el fondo sea visible en móviles */
+    display: flex; /* Usar flexbox para centrar contenido */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Centrar texto dentro del header */
+}
 
-        .titulos {
-            color: rgb(252, 215, 146);
-            font-family: "Merriweather", serif;
-            -webkit-text-stroke: 3px rgb(204, 146, 38);
-            text-align: center; /* Centrar el título */
-            border-bottom: 3px double rgb(204, 146, 38);
-            border-top: 3px double rgb(204, 146, 38);
-            padding: 10px 0; /* Padding vertical para el título */
-            margin: 0 auto; /* Centrar horizontalmente */
-            max-width: 90%; /* Limitar el ancho para que no se desborde en pantallas pequeñas */
-            box-sizing: border-box;
-        }
+.titulos {
+    color: rgb(252, 215, 146);
+    font-family: "Merriweather", serif;
+    -webkit-text-stroke: 3px rgb(204, 146, 38);
+    text-align: center; /* Centrar el título */
+    border-bottom: 3px double rgb(204, 146, 38);
+    border-top: 3px double rgb(204, 146, 38);
+    padding: 10px 0; /* Padding vertical para el título */
+    margin: 0 auto; /* Centrar horizontalmente */
+    width: 90%; /* Usar width en lugar de max-width para asegurar un ancho consistente */
+    max-width: 800px; /* Limitar el ancho máximo para pantallas muy grandes */
+    box-sizing: border-box;
+    font-size: 4rem; /* Tamaño base para pantallas grandes */
+}
 
-        /* Tamaños de fuente responsivos para .titulos */
-        .titulos {
-            font-size: 4rem; /* Tamaño base para pantallas grandes */
-        }
-        @media (max-width: 1024px) { /* Para pantallas medianas (lg) */
-            .titulos {
-                font-size: 3rem;
-            }
-        }
-        @media (max-width: 768px) { /* Para tablets (md) */
-            .titulos {
-                font-size: 2.5rem;
-            }
-        }
-        @media (max-width: 640px) { /* Para móviles (sm) */
-            .titulos {
-                font-size: 2rem;
-                -webkit-text-stroke: 1.5px rgb(204, 146, 38); /* Reducir el stroke en móviles */
-            }
-        }
+/* Tamaños de fuente responsivos para .titulos */
+@media (max-width: 1024px) { /* Para pantallas medianas (lg) */
+    .titulos {
+        font-size: 3rem;
+    }
+}
+@media (max-width: 768px) { /* Para tablets (md) */
+    .titulos {
+        font-size: 2.5rem;
+    }
+}
+@media (max-width: 640px) { /* Para móviles (sm) */
+    .titulos {
+        font-size: 2rem;
+        -webkit-text-stroke: 1.5px rgb(204, 146, 38); /* Reducir el stroke en móviles */
+    }
+}
+@media (max-width: 480px) { /* Para móviles pequeños (mobile L) */
+    .titulos {
+        font-size: 1.5rem; /* Ajuste aún más para móviles muy pequeños */
+        padding: 8px 0;
+        -webkit-text-stroke: 1px rgb(204, 146, 38);
+    }
+}
 
-        .botones {
-            background-color: rgb(252, 215, 146);
-            border-color: rgb(204, 146, 38);
-            padding: 8px 15px; /* Ajustar padding */
-            border-radius: 25px;
-            margin: 10px; /* Espacio entre botones */
-            display: inline-block; /* Para que los botones se alineen */
-        }
-        .botones a {
-            text-decoration: none;
-            font-family: "Merriweather", serif;
-            font-size: 18px; /* Ajustar tamaño de fuente */
-            color: rgb(119, 82, 12);
-        }
+.botones {
+    background-color: rgb(252, 215, 146);
+    border-color: rgb(204, 146, 38);
+    padding: 8px 15px; /* Ajustar padding */
+    border-radius: 25px;
+    margin: 10px; /* Espacio entre botones */
+    display: inline-block; /* Para que los botones se alineen */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Añadir transición para hover */
+}
+.botones a {
+    text-decoration: none;
+    font-family: "Merriweather", serif;
+    font-size: 18px; /* Ajustar tamaño de fuente */
+    color: rgb(119, 82, 12);
+}
+.botones:hover {
+    background-color: rgb(204, 146, 38); /* Color al pasar el ratón */
+    transform: translateY(-2px); /* Pequeño efecto de elevación */
+}
 
-        /* Estilos de las secciones principales (main, multimedia, aborigenes, etc.) */
-        main, section.multimedia, section.aborigenes, section.fauna, section.vegetacion, section.contacto, section.videos {
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: cover; /* Ajustar la imagen para cubrir el área */
-            background-position: center; /* Centrar la imagen de fondo */
-            margin: 0.5px;
-            border: 2px solid rgb(119, 82, 12);
-            padding: 20px; /* Añadir padding para espacio */
-            box-sizing: border-box;
-            /* La altura de 1000px se aplicará solo en pantallas grandes (ver media query) */
-        }
+/* Estilos de las secciones principales (main, multimedia, aborigenes, etc.) */
+main, section.multimedia, section.aborigenes, section.fauna, section.vegetacion, section.contacto, section.videos {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; /* Ajustar la imagen para cubrir el área */
+    background-position: center; /* Centrar la imagen de fondo */
+    margin: 0.5px;
+    border: 2px solid rgb(119, 82, 12);
+    padding: 20px; /* Añadir padding para espacio */
+    box-sizing: border-box;
+    min-height: 400px; /* Altura mínima para que el fondo sea visible en móviles */
+    display: flex; /* Usar flexbox para centrar contenido */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Centrar texto dentro de las secciones */
+}
 
-        /* MEDIA QUERY para pantallas de "Laptop L" y superiores */
-        @media (min-width: 1024px) {
-            header,
-            main,
-            section.multimedia,
-            section.aborigenes,
-            section.fauna,
-            section.vegetacion,
-            section.contacto,
-            section.videos {
-                height: 950px; /* Altura fija a 1000px para estas pantallas */
-            }
-        }
+/* MEDIA QUERY para pantallas de "Laptop L" y superiores */
+@media (min-width: 1024px) {
+    header,
+    main,
+    section.multimedia,
+    section.aborigenes,
+    section.fauna,
+    section.vegetacion,
+    section.contacto,
+    section.videos {
+        height: 950px; /* Altura fija a 950px para estas pantallas */
+    }
+}
 
-        main {
-            background-image: url(IMG/AFRICA14.jpg);
-        }
-        main p {
-            font-family: "Merriweather", serif;
-            font-size: 1rem; /* Tamaño de fuente base */
-            color: white;
-            margin: 20px auto; /* Centrar y añadir margen vertical */
-            max-width: 800px; /* Limitar el ancho del texto para legibilidad */
-            padding: 0 15px; /* Padding horizontal para el texto */
-            text-align: justify; /* Justificar el texto */
-        }
-        @media (max-width: 640px) {
-            main p {
-                font-size: 0.9rem;
-            }
-        }
+main {
+    background-image: url(IMG/AFRICA14.jpg);
+}
+main p {
+    font-family: "Merriweather", serif;
+    font-size: 1rem; /* Tamaño de fuente base */
+    color: white;
+    margin: 20px auto; /* Centrar y añadir margen vertical */
+    max-width: 800px; /* Limitar el ancho del texto para legibilidad */
+    padding: 0 15px; /* Padding horizontal para el texto */
+    text-align: justify; /* Justificar el texto */
+    line-height: 1.6; /* Mejorar la legibilidad con un poco más de interlineado */
+}
+@media (max-width: 640px) {
+    main p {
+        font-size: 0.9rem;
+        padding: 0 10px; /* Reducir padding en móviles */
+    }
+}
+@media (max-width: 480px) { /* Móviles pequeños */
+    main p {
+        font-size: 0.85rem;
+        padding: 0 8px;
+    }
+}
 
-        .boton-principal, .boton-principal-v {
-            background-color: rgb(252, 215, 146);
-            border-color: rgb(204, 146, 38);
-            padding: 8px 15px;
-            border-radius: 25px; 
-            margin: 10px auto; /* Centrar y añadir margen vertical */
-            display: block; /* Para que ocupe su propia línea y se pueda centrar */
-            width: fit-content; /* Ajustar ancho al contenido */
-        }
-        .boton-principal a, .boton-principal-v a {
-            text-decoration: none;
-            font-family: "Merriweather", serif;
-            font-size: 18px;
-            color: rgb(119, 82, 12);
-        }
+.boton-principal, .boton-principal-v {
+    background-color: rgb(252, 215, 146);
+    border-color: rgb(204, 146, 38);
+    padding: 10px 20px; /* Aumentar un poco el padding para mejor toque */
+    border-radius: 25px;
+    margin: 15px auto; /* Centrar y añadir margen vertical */
+    display: block; /* Para que ocupe su propia línea y se pueda centrar */
+    width: fit-content; /* Ajustar ancho al contenido */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transición para hover */
+}
+.boton-principal a, .boton-principal-v a {
+    text-decoration: none;
+    font-family: "Merriweather", serif;
+    font-size: 18px;
+    color: rgb(119, 82, 12);
+}
+.boton-principal:hover, .boton-principal-v:hover {
+    background-color: rgb(204, 146, 38);
+    transform: translateY(-2px);
+}
 
-        section.multimedia {
-            background-image: url(IMG/AFRICA9.jpg);
-        }
-        section.aborigenes {
-            background-image: url(IMG/GENTE12.jpg);
-        }
-        section.fauna {
-            background-image: url(IMG/ELEFANTE3.jpg);
-        }
-        section.vegetacion {
-            background-image: url(IMG/AFRICA17.jpg);
-        }
-        section.contacto {
-            background-image: url(IMG/LANDSCAPE6.jpg);
-        }
-        section.videos {
-            background-image: url(IMG/LANDSCAPE7.jpg);
-            opacity: 0.99; /* Mantener la opacidad si es intencional */
-        }
+section.multimedia {
+    background-image: url(IMG/AFRICA9.jpg);
+}
+section.aborigenes {
+    background-image: url(IMG/GENTE12.jpg);
+}
+section.fauna {
+    background-image: url(IMG/ELEFANTE3.jpg);
+}
+section.vegetacion {
+    background-image: url(IMG/AFRICA17.jpg);
+}
+section.contacto {
+    background-image: url(IMG/LANDSCAPE6.jpg);
+}
+section.videos {
+    background-image: url(IMG/LANDSCAPE7.jpg);
+    opacity: 0.99; /* Mantener la opacidad si es intencional */
+}
 
-        /* Slider de imágenes */
-        .slider {
-            display: flex;
-            flex-wrap: wrap; /* Permitir que las imágenes salten de línea */
-            justify-content: center;
-            gap: 10px;
-            padding: 20px 0;
-        }
-        .slider img {
-            height: 320px; /* Altura fija para las miniaturas */
-            width: 18%; /* Ancho responsivo para 5 imágenes por fila */
-            object-fit: cover;
-            border-radius: 10px;
-            border: 2px solid white;
-            transition: all ease-in-out 0.5s; /* Transición más suave */
-            cursor: pointer; /* Indicar que son clicables */
-        }
-        /* Ajuste para pantallas más pequeñas */
-        @media (max-width: 1024px) {
-            .slider img {
-                width: 22%; /* 4 imágenes por fila */
-            }
-        }
-        @media (max-width: 768px) {
-            .slider img {
-                width: 30%; /* 3 imágenes por fila */
-                height: 120px; /* Reducir altura en tablets */
-            }
-        }
-        @media (max-width: 640px) {
-            .slider img {
-                width: 45%; /* 2 imágenes por fila */
-                height: 100px; /* Reducir altura en móviles */
-            }
-        }
-        .slider img:hover {
-            transform: scale(1.1); /* Zoom al pasar el ratón */
-            z-index: 10; /* Asegurar que la imagen en hover esté por encima */
-        }
+/* Slider de imágenes */
+.slider {
+    display: flex;
+    flex-wrap: wrap; /* Permitir que las imágenes salten de línea */
+    justify-content: center;
+    gap: 10px;
+    padding: 20px 0;
+    max-width: 1200px; /* Limitar el ancho del slider para que no se extienda demasiado */
+    margin: 0 auto; /* Centrar el slider */
+}
+.slider img {
+    height: 320px; /* Altura fija para las miniaturas en pantallas grandes */
+    width: 18%; /* Ancho responsivo para 5 imágenes por fila */
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid white;
+    transition: all ease-in-out 0.5s; /* Transición más suave */
+    cursor: pointer; /* Indicar que son clicables */
+}
+/* Ajuste para pantallas más pequeñas */
+@media (max-width: 1024px) {
+    .slider img {
+        width: 22%; /* 4 imágenes por fila */
+    }
+}
+@media (max-width: 768px) {
+    .slider img {
+        width: 30%; /* 3 imágenes por fila */
+        height: 160px; /* Aumentar un poco la altura en tablets para mejor visualización */
+    }
+}
+@media (max-width: 640px) {
+    .slider img {
+        width: 45%; /* 2 imágenes por fila */
+        height: 120px; /* Reducir altura en móviles */
+    }
+}
+@media (max-width: 480px) { /* Móviles pequeños (mobile L) */
+    .slider img {
+        width: 90%; /* 1 imagen por fila, casi de ancho completo */
+        height: 180px; /* Ajustar altura para una sola imagen por fila */
+    }
+}
+.slider img:hover {
+    transform: scale(1.1); /* Zoom al pasar el ratón */
+    z-index: 10; /* Asegurar que la imagen en hover esté por encima */
+}
 
-        /* Contenedor de videos */
-        .fullscreen-container {
-            display: flex;
-            flex-wrap: wrap; /* Permitir que los videos salten de línea */
-            justify-content: center;
-            gap: 15px; /* Espacio entre videos */
-            padding: 10px;
-            border: 2px solid rgb(175, 102, 7);
-            background-color: rgb(240, 180, 52);
-            margin: 10px auto; /* Centrar y añadir margen */
-            max-width: 1200px; /* Limitar el ancho del contenedor para laptops */
-        }
-        .fullscreen-video {
-            object-fit: cover;
-            margin: 0; /* Eliminar márgenes internos */
-            border-radius: 8px; /* Bordes redondeados */
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Sombra suave */
+/* Contenedor de videos */
+.fullscreen-container {
+    display: flex;
+    flex-wrap: wrap; /* Permitir que los videos salten de línea */
+    justify-content: center;
+    gap: 15px; /* Espacio entre videos */
+    padding: 10px;
+    border: 2px solid rgb(175, 102, 7);
+    background-color: rgb(240, 180, 52);
+    margin: 10px auto; /* Centrar y añadir margen */
+    max-width: 1200px; /* Limitar el ancho del contenedor para laptops */
+    border-radius: 10px; /* Bordes redondeados para el contenedor */
+}
+.fullscreen-video {
+    object-fit: cover;
+    margin: 0; /* Eliminar márgenes internos */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Sombra suave */
+    width: 90%; /* Estilos base para móviles (1 video por fila) */
+    height: auto; /* La altura se ajusta automáticamente */
+    aspect-ratio: 16 / 9; /* Mantener la relación de aspecto 16:9 para videos */
+}
 
-            /* Estilos base para móviles (1 video por fila) */
-            width: 90%;
-            height: auto; /* La altura se ajusta automáticamente */
-        }
+/* Media query para tablets (2 videos por fila) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .fullscreen-video {
+        width: 45%; /* Aproximadamente la mitad del contenedor, dejando espacio para el gap */
+    }
+}
 
-        /* Media query para tablets (2 videos por fila) */
-        @media (min-width: 768px) and (max-width: 1023px) {
-            .fullscreen-video {
-                width: 45%; /* Aproximadamente la mitad del contenedor, dejando espacio para el gap */
-                height: auto;
-            }
-        }
+/* Media query para Laptop L y pantallas más grandes (5 videos en paralelo) */
+@media (min-width: 1024px) {
+    .fullscreen-video {
+        width: 220px; /* Ancho ajustado para que quepan 5 videos con gaps en 1200px */
+        height: 123.75px; /* Altura en proporción 16:9 para 220px de ancho (220 * 9 / 16) */
+    }
+}
 
-        /* Media query para Laptop L y pantallas más grandes (5 videos en paralelo) */
-        @media (min-width: 1024px) {
-            .fullscreen-video {
-                width: 220px; /* Ancho ajustado para que quepan 5 videos con gaps en 1200px */
-                height: 420px; /* Altura en proporción 16:9 para 220px de ancho */
-            }
-        }
+/* Formulario de contacto */
+.formulario {
+    font-family: "Merriweather", serif;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4); /* Fondo semi-transparente para el formulario */
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow:
+        -15px -15px 30px 0px rgba(255,255,255,0.05), /* Ajustar sombras para fondo oscuro */
+        -4px -4px 5px 0px rgba(255,255,255,0.05),
+        9px 9px 20px 0px rgba(0,0,0,0.4),
+        4px 4px 5px 0px rgba(0,0,0,0.2);
+    transition: box-shadow 0.6s cubic-bezier(.79,.21,.06,.81);
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Borde más sutil */
+    margin: 20px auto; /* Centrar el formulario */
+    max-width: 500px; /* Limitar el ancho del formulario */
+    display: block; /* Asegurar que ocupe su propio espacio */
+    box-sizing: border-box; /* Asegurar que padding y border se incluyan en el width */
+    width: 90%; /* Ancho responsivo para el formulario */
+}
+.formulario label {
+    display: block; /* Cada label en su propia línea */
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+}
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario input[type="number"],
+.formulario textarea {
+    width: 100%; /* Ocupar todo el ancho disponible */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo del input semi-transparente */
+    color: white;
+    box-sizing: border-box;
+}
+.formulario input::placeholder,
+.formulario textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+.formulario textarea {
+    resize: vertical; /* Permitir redimensionar verticalmente */
+}
+.formulario button[type="Submit"] {
+    background-color: rgb(218, 185, 80);
+    border: 1px solid rgb(119, 82, 12);
+    color: rgb(235, 225, 207);
+    padding: 10px 20px; /* Aumentar padding para el botón */
+    width: 100%; /* Ocupar todo el ancho */
+    margin-left: 0; /* Eliminar margen fijo */
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    box-shadow: none; /* Eliminar sombra compleja del botón */
+    transition: background-color 0.3s ease;
+}
+.formulario button[type="Submit"]:hover {
+    background-color: rgb(204, 146, 38);
+}
 
-        /* Formulario de contacto */
-        .formulario {
-            font-family: "Merriweather", serif;
-            color: white;
-            background-color: rgba(0, 0, 0, 0.4); /* Fondo semi-transparente para el formulario */
-            padding: 25px;
-            border-radius: 10px;
-            box-shadow:
-                -15px -15px 30px 0px rgba(255,255,255,0.05), /* Ajustar sombras para fondo oscuro */
-                -4px -4px 5px 0px rgba(255,255,255,0.05),
-                9px 9px 20px 0px rgba(0,0,0,0.4),
-                4px 4px 5px 0px rgba(0,0,0,0.2);
-            transition: box-shadow 0.6s cubic-bezier(.79,.21,.06,.81);
-            border: 1px solid rgba(255, 255, 255, 0.3); /* Borde más sutil */
-            margin: 20px auto; /* Centrar el formulario */
-            max-width: 500px; /* Limitar el ancho del formulario */
-            display: block; /* Asegurar que ocupe su propio espacio */
-        }
-        .formulario label {
-            display: block; /* Cada label en su propia línea */
-            margin-bottom: 5px;
-            font-size: 1.1rem;
-        }
-        .formulario input[type="text"],
-        .formulario input[type="email"],
-        .formulario input[type="number"],
-        .formulario textarea {
-            width: 100%; /* Ocupar todo el ancho disponible */
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid rgba(255, 255, 255, 0.5);
-            border-radius: 5px;
-            background-color: rgba(255, 255, 255, 0.1); /* Fondo del input semi-transparente */
-            color: white;
-            box-sizing: border-box;
-        }
-        .formulario input::placeholder,
-        .formulario textarea::placeholder {
-            color: rgba(255, 255, 255, 0.7);
-        }
-        .formulario textarea {
-            resize: vertical; /* Permitir redimensionar verticalmente */
-        }
-        .formulario button[type="Submit"] {
-            background-color: rgb(218, 185, 80);
-            border: 1px solid rgb(119, 82, 12);
-            color: rgb(235, 225, 207);
-            padding: 6px 20px;
-            width: 100%; /* Ocupar todo el ancho */
-            margin-left: 0; /* Eliminar margen fijo */
-            border-radius: 20px;
-            cursor: pointer;
-            font-size: 1.1rem;
-            box-shadow: none; /* Eliminar sombra compleja del botón */
-            transition: background-color 0.3s ease;
-        }
-        .formulario button[type="Submit"]:hover {
-            background-color: rgb(204, 146, 38);
-        }
+/* Redes sociales en el footer (frame) */
+.frame {
+    display: flex;
+    flex-wrap: wrap; /* Permitir que los iconos salten de línea */
+    justify-content: center; /* Centrar los iconos */
+    align-items: center;
+    padding: 10px; /* Aumentar padding para el frame */
+    max-width: 600px; /* Limitar el ancho del contenedor de iconos */
+    margin: 20px auto; /* Centrar y añadir margen */
+    box-shadow:
+        -7px -7px 20px 0px #fff9,
+        -4px -4px 5px 0px #fff9,
+        7px 7px 20px 0px #0002,
+        4px 4px 5px 0px #0001;
+    transition: box-shadow 0.6s cubic-bezier(.79,.21,.06,.81);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo sutil para el frame */
+}
+.btn {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%; /* Hacer los botones circulares */
+    background: #e0e5ec; /* Color de fondo original para los botones */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow:
+        -7px -7px 20px 0px #fff9,
+        -4px -4px 5px 0px #fff9,
+        7px 7px 20px 0px #0002,
+        4px 4px 5px 0px #0001;
+    transition: box-shadow 0.6s cubic-bezier(.79,.21,.06,.81);
+    font-size: 1.5rem; /* Aumentar tamaño de icono */
+    color: rgba(42, 52, 84, 1);
+    text-decoration: none;
+    margin: 10px; /* Espacio entre los botones */
+}
+.btn:active {
+    box-shadow: 4px 4px 6px 0 rgba(255,255,255,.5),
+                -4px -4px 6px 0 rgba(116, 125, 136, .2),
+                inset -4px -4px 6px 0 rgba(255,255,255,.5),
+                inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+}
+/* Colores específicos para los iconos de redes sociales en el frame */
+.btn .fa-facebook-f { color: #3b5998; }
+.btn .fa-twitter { color: #00acee; }
+.btn .fa-instagram { color: #e44428; } /* Mantener tu color original para este set */
+.btn .fa-linkedin-in { color: #0e76a8; }
+.btn .fa-pinterest { color: #e00d29; }
+.btn .fa-envelope { color: #777; } /* Un color neutro para el sobre */
 
-        /* Redes sociales en el footer (frame) */
-        .frame {
-            display: flex;
-            flex-wrap: wrap; /* Permitir que los iconos salten de línea */
-            justify-content: center; /* Centrar los iconos */
-            align-items: center;
-            padding: 2px;
-            max-width: 600px; /* Limitar el ancho del contenedor de iconos */
-            margin: 10px auto; /* Centrar y añadir margen */
-            box-shadow:
-                -7px -7px 20px 0px #fff9,
-                -4px -4px 5px 0px #fff9,
-                7px 7px 20px 0px #0002,
-                4px 4px 5px 0px #0001;
-            transition: box-shadow 0.6s cubic-bezier(.79,.21,.06,.81);
-            border-radius: 10px;
-            background-color: rgba(255, 255, 255, 0.1); /* Fondo sutil para el frame */
-        }
-        .btn {
-            height: 50px;
-            width: 50px;
-            border-radius: 50%; /* Hacer los botones circulares */
-            background: #e0e5ec; /* Color de fondo original para los botones */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            box-shadow:
-                -7px -7px 20px 0px #fff9,
-                -4px -4px 5px 0px #fff9,
-                7px 7px 20px 0px #0002,
-                4px 4px 5px 0px #0001;
-            transition: box-shadow 0.6s cubic-bezier(.79,.21,.06,.81);
-            font-size: 1.5rem; /* Aumentar tamaño de icono */
-            color: rgba(42, 52, 84, 1);
-            text-decoration: none;
-            margin: 10px; /* Espacio entre los botones */
-        }
-        .btn:active {
-            box-shadow: 4px 4px 6px 0 rgba(255,255,255,.5),
-                        -4px -4px 6px 0 rgba(116, 125, 136, .2),
-                        inset -4px -4px 6px 0 rgba(255,255,255,.5),
-                        inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
-        }
-        /* Colores específicos para los iconos de redes sociales en el frame */
-        .btn .fa-facebook-f { color: #3b5998; }
-        .btn .fa-twitter { color: #00acee; }
-        .btn .fa-instagram { color: #e44428; } /* Mantener tu color original para este set */
-        .btn .fa-linkedin-in { color: #0e76a8; }
-        .btn .fa-pinterest { color: #e00d29; }
-        .btn .fa-envelope { color: #777; } /* Un color neutro para el sobre */
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(119, 82, 12); /* Fondo del footer */
+    color: rgb(252, 234, 194);
+    margin-top: 20px;
+}
 
-        /* Footer */
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: rgb(119, 82, 12); /* Fondo del footer */
-            color: rgb(252, 234, 194);
-            margin-top: 20px;
-        }
+/* Iconos flotantes (izquierda) */
+#social-float {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: white; /* Fondo más claro */
+    padding: 12px;
+    border-radius: 9999px; /* Para hacerlo circular */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Sombra suave */
+    display: flex;
+    flex-direction: column;
+    gap: 16px; /* Espacio entre iconos */
+    z-index: 999; /* Asegura que esté por encima de otros elementos */
+}
+#social-float a {
+    color: #3b82f6; /* Azul por defecto para Facebook si no se especifica */
+    transition: color 0.3s ease-in-out;
+    font-size: 1.5rem; /* Asegurar un tamaño de icono consistente */
+}
+#social-float a:hover {
+    color: #2563eb; /* Azul más oscuro por defecto */
+}
 
-        /* Iconos flotantes (izquierda) */
-        #social-float {
-            position: fixed;
-            bottom: 20px;
-            left: 20px;
-            background-color: white; /* Fondo más claro */
-            padding: 12px;
-            border-radius: 9999px; /* Para hacerlo circular */
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Sombra suave */
-            display: flex;
-            flex-direction: column;
-            gap: 16px; /* Espacio entre iconos */
-            z-index: 999; /* Asegura que esté por encima de otros elementos */
-        }
-        #social-float a {
-            color: #3b82f6; /* Azul por defecto para Facebook si no se especifica */
-            transition: color 0.3s ease-in-out;
-        }
-        #social-float a:hover {
-            color: #2563eb; /* Azul más oscuro por defecto */
-        }
+/* Colores específicos para Instagram y YouTube en el flotante izquierdo */
+#social-float a[aria-label="Visita nuestro Instagram"] {
+    color: #C13584; /* Rosado oscuro para Instagram */
+}
+#social-float a[aria-label="Visita nuestro Instagram"]:hover {
+    color: #A82B71; /* Rosado más oscuro al pasar el ratón */
+}
+#social-float a[aria-label="Visita nuestro YouTube"] {
+    color: #FF0000; /* Rojo para YouTube */
+}
+#social-float a[aria-label="Visita nuestro YouTube"]:hover {
+    color: #CC0000; /* Rojo más oscuro al pasar el ratón */
+}
 
-        /* Colores específicos para Instagram y YouTube en el flotante izquierdo */
-        #social-float a[aria-label="Visita nuestro Instagram"] {
-            color: #C13584; /* Rosado oscuro para Instagram */
-        }
-        #social-float a[aria-label="Visita nuestro Instagram"]:hover {
-            color: #A82B71; /* Rosado más oscuro al pasar el ratón */
-        }
-        #social-float a[aria-label="Visita nuestro YouTube"] {
-            color: #FF0000; /* Rojo para YouTube */
-        }
-        #social-float a[aria-label="Visita nuestro YouTube"]:hover {
-            color: #CC0000; /* Rojo más oscuro al pasar el ratón */
-        }
+/* Estilos para el icono de WhatsApp flotante (derecha) */
+#whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px; /* Posicionado a la derecha */
+    background-color: white; /* Fondo blanco */
+    padding: 12px;
+    border-radius: 9999px; /* Circular */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Sombra suave */
+    z-index: 999; /* Asegura que esté por encima de otros elementos */
+}
+#whatsapp-float a {
+    color: #25D366; /* Color verde de WhatsApp */
+    transition: color 0.3s ease-in-out;
+    font-size: 1.5rem; /* Asegurar un tamaño de icono consistente */
+}
+#whatsapp-float a:hover {
+    color: #1DA851; /* Verde más oscuro al pasar el ratón */
+}
 
-        /* Estilos para el icono de WhatsApp flotante (derecha) */
-        #whatsapp-float {
-            position: fixed;
-            bottom: 20px;
-            right: 20px; /* Posicionado a la derecha */
-            background-color: white; /* Fondo blanco */
-            padding: 12px;
-            border-radius: 9999px; /* Circular */
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Sombra suave */
-            z-index: 999; /* Asegura que esté por encima de otros elementos */
-        }
-        #whatsapp-float a {
-            color: #25D366; /* Color verde de WhatsApp */
-            transition: color 0.3s ease-in-out;
-        }
-        #whatsapp-float a:hover {
-            color: #1DA851; /* Verde más oscuro al pasar el ratón */
-        }
+/* Estilos para el visor de imágenes (lightbox) - Mantenidos */
+.lightbox-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro semitransparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Asegura que esté por encima de todo */
+    opacity: 0; /* Inicialmente transparente */
+    visibility: hidden; /* Inicialmente oculto para que no ocupe espacio */
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
 
-        /* Estilos para el visor de imágenes (lightbox) - Mantenidos */
-        .lightbox-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro semitransparente */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 1000; /* Asegura que esté por encima de todo */
-            opacity: 0; /* Inicialmente transparente */
-            visibility: hidden; /* Inicialmente oculto para que no ocupe espacio */
-            transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
-        }
+.lightbox-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
 
-        .lightbox-overlay.active {
-            opacity: 1;
-            visibility: visible;
-        }
-
-        .lightbox-image {
-            max-width: 90%;
-            max-height: 90%;
-            object-fit: contain; /* Asegura que la imagen se ajuste sin distorsionarse */
-            border-radius: 8px; /* Pequeño borde redondeado */
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Sombra para resaltar */
-            cursor: pointer; /* Para indicar que también se puede cerrar haciendo clic en la imagen */
-        }
+.lightbox-image {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain; /* Asegura que la imagen se ajuste sin distorsionarse */
+    border-radius: 8px; /* Pequeño borde redondeado */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Sombra para resaltar */
+    cursor: pointer; /* Para indicar que también se puede cerrar haciendo clic en la imagen */
+}
